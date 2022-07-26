@@ -1,7 +1,121 @@
 /*
-background-grey: #F4F3F4;
 button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 768px) {
+    /* NAVBAR */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white; */
+    }
+    nav > img {
+        width: 15%;
+        margin: 10px 30px;
+    }
+    nav li {
+        visibility: hidden;
+    }
+
+    /* HEADER */
+    header {
+        margin: 10px 30px;
+    }
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header input {
+        padding: 15px;
+        margin-bottom: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    header button {
+        background-color:#192592;
+        color: white;
+        border: 1px #192592 solid;
+        padding: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    .signin {
+        text-align: center;
+    }
+    header img {
+        width: 75%;
+    }
+    /* MAIN */
+    main .background-gray{
+        background-color:#F4F3F4;
+        text-align: center;
+        margin: 0;
+        padding: 0 30px;
+        padding-bottom: 30px;
+    }
+    main > * {
+        margin: 10px 30px;
+        padding: 20px;
+    }
+    #discover{
+        background-color:white;
+        color: #192592;
+        border: 1px #192592 solid;
+        padding: 15px;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        font-weight: bold;
+    }
+    main img {
+        padding: 30px 90px;
+        height: 90px;
+        object-fit: contain;
+    }
+    main img:not(:last-child) {
+        border-bottom: solid 1px gray;
+    }
+
+    .background-white {
+        background-color: white;
+        margin: 10px 30px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .background-white input {
+        padding: 15px;
+        margin-bottom: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .background-white button {
+        background-color:#192592;
+        color: white;
+        border: 1px #192592 solid;
+        padding: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+}
+
